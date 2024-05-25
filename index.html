@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .m1 {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1 class="text-center mt-3">Hear HSE! <br> Номер пользователя = {{id_}}</h1>
+    <div class="mt-3" style="margin-block: 10px">
+        <a href="/reboot" class="btn btn-danger">Сбросить прогресс</a>
+    </div>
+    <div class="col-md-12">
+        <div class="card text-center mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Сессия</h5>
+                <p class="card-text">Все упражнения</p>
+                <a href="/session" class="btn btn-primary">Начать</a>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="row mt-3">
+            <h2 class="text-center mt-3 m1">Упражнения на слова</h2>
+            <div class="col-md-6">
+                <div class="card text-center mb-3" style="height: 12rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Упражнение 1</h5>
+                        <p class="card-text">Ввести услышанное слово</p>
+                        <a href="/word" class="btn btn-primary">Начать</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card text-center mb-3" style="height: 12rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Упражнение 2</h5>
+                        <p class="card-text">Выбрать слово из 2ух</p>
+                        <a href="/word_radio2" class="btn btn-primary">Начать</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <div class="card text-center mb-3" style="height: 12rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Упражнение 3</h5>
+                        <p class="card-text">Выбрать слово из 4х</p>
+                        <a href="/quiz_radio4" class="btn btn-primary">Начать</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card text-center mb-3" style="height: 12rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Упражнение 4</h5>
+                        <p class="card-text">Вписать слово</p>
+                        <a href="/quiz_add" class="btn btn-primary">Начать</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <h2 class="text-center mt-3 m1">Упражнения на предложения</h2>
+            <div class="col-md-6">
+                <div class="card text-center mb-3" style="height: 12rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Упражнение 1</h5>
+                        <p class="card-text">Записать предложение</p>
+                        <a href="/quiz1" class="btn btn-primary">Начать</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card text-center mb-3" style="height: 12rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Упражнение 2</h5>
+                        <p class="card-text">Записать словосочетание</p>
+                        <a href="quiz2" class="btn btn-primary">Начать</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <div class="card text-center mb-3" style="height: 12rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Упражнение 3</h5>
+                        <p class="card-text">Ответить на вопрос</p>
+                        <a href="/quest" class="btn btn-primary">Начать</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card text-center mb-3" style="height: 12rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Упражнение 4</h5>
+                        <p class="card-text">Записать предложения 2.0</p>
+                        <a href="/quiz_inf?type=s" class="btn btn-primary">Начать</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+</body>
+</html>
